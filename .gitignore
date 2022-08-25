@@ -1,0 +1,10 @@
+/node_modules
+/.parcel-cache
+/dist
+/fonts
+/images
+/files
+/robots.txt
+/sitemap.xml
+/src/css/style.css.map
+

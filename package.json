@@ -1,0 +1,16 @@
+{
+  "name": "notary-website",
+  "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel index.html && parcel watch index.html",
+    "build": "parcel build"
+  },
+  "author": "Pawel Komorkiewicz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
