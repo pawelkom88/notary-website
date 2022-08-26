@@ -7,47 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- META TAGS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
     <script defer src="./js/index.js"></script>
     <title>Sikorska Notary - mobile notary in Bristol and South West</title>
   </head>
   <body>
     <a href="#main" class="visible-hidden">Jump directly to main content</a>
-    <header>
-      <nav class="nav-bar">
-        <picture> logo </picture>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="">a</a></li>
-          <li class="nav-link"><a href="">b</a></li>
-          <li class="nav-link"><a href="">c</a></li>
-          <li class="nav-link"><a href="">d</a></li>
-        </ul>
-        <div class="languages">
-          <span class="pl">
+    <section class="hero">
+      <header>
+        <nav class="nav-bar">
+          <picture>
+            <source media="(max-width:576px)" srcset="/images/logo-webp.webp" />
             <img
+              class="logo"
+              src="/images/logo-png.png"
+              srcset="/images/logo-png.png 1x"
+              alt="Sikorska notary logo" />
+          </picture>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="service.html">Notarial service</a></li>
+            <li class="nav-link"><a href="legislation.html">Apostille & Legislation</a></li>
+            <li class="nav-link"><a href="fees.html">Fees & Disbursements</a></li>
+            <li class="nav-link"><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <div class="languages">
+            <img
+              width="20px"
+              height="20px"
+              class="language-icon pl"
               src="/images/polish-flag.svg"
-              aria-describedby=""
-              alt="Polish flag icon"
-              aria-describedby="click here to change language to Polish" />
-          </span>
-          <span class="eng">
+              alt="Polish flag icon" />
             <img
+              width="20px"
+              height="20px"
+              class="language-icon eng"
               src="/images/uk-flag.svg"
-              aria-describedby=""
-              alt="UK flag icon"
-              aria-describedby="click here to change language to English" />
-          </span>
-        </div>
-        <button class="btn cta-btn">Make an enquiry</button>
-      </nav>
-    </header>
+              alt="UK flag icon" />
+          </div>
+          <button type="button" class="btn cta-btn">Make an enquiry</button>
+        </nav>
+      </header>
+      <h1 class="hero__heading">
+        Sikorska notary <br />
+        the notary that cares
+      </h1>
+      <p class="hero__paragraph">
+        Sikorska Notary provides a full range of notarial services for clients at their convenience.
+      </p>
+      <a href="#main" class="btn hero__btn">Learn more</a>
+      <small>Lex est quod notamus</small>
+    </section>
     <main id="main">
-      <section class="hero">
-        <h1 class="hero__heading">asd</h1>
-        <p class="hero__paragraph">asd</p>
-        <button class="btn hero__btn">Learn more</button>
+      <section>
+        <h2>About</h2>
       </section>
-      <section>about</section>
-      <section class="contact">text + contact from</section>
+      <section class="contact"><h2>text + contact from</h2></section>
       <footer>grid</footer>
     </main>
   </body>
