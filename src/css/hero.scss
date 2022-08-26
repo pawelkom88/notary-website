@@ -1,0 +1,73 @@
+@import "./partials/colors";
+
+@font-face {
+  font-family: "Crimson";
+  font-display: swap;
+  src: url(/fonts/Crimson.ttf) format("ttf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F,
+    U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.hero {
+  $bg-image: url("/images/index-bg.jpg");
+
+  position: relative;
+  color: $white;
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.9;
+    background-color: $primary;
+    z-index: -1;
+  }
+
+  &__heading {
+    font-family: "Crimson", san-serif;
+    font-size: clamp(2rem, 1rem + 3vw, 5rem);
+    font-weight: normal;
+    margin-top: 15vh;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    font-weight: lighter;
+    margin-top: 2vh;
+  }
+}
+
+.nav-bar,
+.nav-links {
+  display: flex;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links:not(:last-child) {
+  margin-right: 100px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.languages {
+  display: flex;
+}
+
+.language-icon {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.pl {
+  margin-right: 10px;
+}

@@ -2,4 +2,14 @@
 
 body {
   font-family: "Calibri", sans-serif;
+  letter-spacing: 1px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2vw 8vw;
+}
+
+.btn {
+  display: inline-block;
 }
