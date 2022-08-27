@@ -13,13 +13,13 @@ $transition: all 0.3s ease-in-out;
 .hero {
   position: relative;
   color: $white;
-  background-image: url("/images/index-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/images/index-bg1.webp"), url("/images/index-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   z-index: 1;
 
   @media (max-width: 575px) {
-    background-image: url("/images/index-bg-mobile1.jpg"); // chnage res and format
+    background-image: url("/images/index-bg-mobile1.webp"), url("/images/index-bg-mobile1.jpg");
   }
 
   &::before {
@@ -110,12 +110,9 @@ $transition: all 0.3s ease-in-out;
 }
 
 .logo {
-  max-width: 60px;
+  width: 50px !important;
+  height: 40px;
   cursor: pointer;
-
-  @media (max-width: 575px) {
-    max-width: 40px;
-  }
 }
 
 .languages {
@@ -153,39 +150,4 @@ $transition: all 0.3s ease-in-out;
   @media (max-width: 575px) {
     display: none;
   }
-}
-
-.tooltip .tooltiptext {
-  position: absolute;
-  top: 9.5vh;
-  right: 23%;
-  font-size: 0.8rem;
-  font-weight: bold;
-  opacity: 0;
-  width: 150px;
-  background-color: $white;
-  color: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 7px 0;
-  transition: opacity 0.3s ease;
-
-  // @media (max-width: 900px) {
-  //   display: none;
-  // }
-}
-
-.tooltip:hover .tooltiptext {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.hidden {
-  display: none;
-}
-
-.modal-active {
-  opacity: 1;
-  transition: $transition;
-  pointer-events: unset;
 }
