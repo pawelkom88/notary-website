@@ -7,14 +7,14 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background-image: url("/images/index-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/images/index-bg1.webp"), url("/images/index-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   z-index: 1;
 }
 @media (max-width: 575px) {
   .hero {
-    background-image: url("/images/index-bg-mobile1.jpg");
+    background-image: url("/images/index-bg-mobile1.webp"), url("/images/index-bg-mobile1.jpg");
   }
 }
 .hero::before {
@@ -99,13 +99,9 @@
 }
 
 .logo {
-  max-width: 60px;
+  width: 50px !important;
+  height: 40px;
   cursor: pointer;
-}
-@media (max-width: 575px) {
-  .logo {
-    max-width: 40px;
-  }
 }
 
 .languages {
@@ -147,35 +143,4 @@
   .latin {
     display: none;
   }
-}
-
-.tooltip .tooltiptext {
-  position: absolute;
-  top: 9.5vh;
-  right: 23%;
-  font-size: 0.8rem;
-  font-weight: bold;
-  opacity: 0;
-  width: 150px;
-  background-color: #ffffff;
-  color: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 7px 0;
-  transition: opacity 0.3s ease;
-}
-
-.tooltip:hover .tooltiptext {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.hidden {
-  display: none;
-}
-
-.modal-active {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-  pointer-events: unset;
 }/*# sourceMappingURL=hero.css.map */

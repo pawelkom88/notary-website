@@ -11,6 +11,7 @@
   "author": "Pawel Komorkiewicz",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
   }
 }
