@@ -12,11 +12,6 @@
   background-size: cover, cover;
   z-index: 1;
 }
-@media (max-width: 575px) {
-  .hero {
-    background-image: url("/images/index-bg-mobile1.webp"), url("/images/index-bg-mobile1.jpg");
-  }
-}
 .hero::before {
   content: "";
   position: absolute;
@@ -53,7 +48,7 @@
   background: none;
   border: 2px solid #ecc96e;
   color: #ecc96e;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 .hero__btn {
   margin-top: 2vh;
@@ -114,7 +109,7 @@
 }
 @media (min-width: 1441px) {
   .languages {
-    padding-left: 17vw;
+    padding-left: 10vw;
   }
 }
 @media (min-width: 1921px) {
