@@ -1,6 +1,5 @@
 @import "./partials/colors";
-
-$transition: all 0.3s ease-in-out;
+@import "./partials/mixins";
 
 @font-face {
   font-family: "PlayfairDisplay";
@@ -18,9 +17,9 @@ $transition: all 0.3s ease-in-out;
   background-size: cover, cover;
   z-index: 1;
 
-  @media (max-width: 575px) {
-    background-image: url("/images/index-bg-mobile1.webp"), url("/images/index-bg-mobile1.jpg");
-  }
+  // @media (max-width: 575px) {
+  //   background-image: url("/images/index-bg-mobile1.webp"), url("/images/index-bg-mobile1.jpg");
+  // }
 
   &::before {
     content: "";
@@ -50,17 +49,14 @@ $transition: all 0.3s ease-in-out;
     letter-spacing: 1px;
     border: 2px solid $teriary;
     padding: 0.5rem 1.2rem;
-    transition: $transition;
+    @include transition(0.3s);
 
     @media (max-width: 900px) {
       display: none;
     }
 
     &:hover {
-      background: none;
-      border: 2px solid $teriary;
-      color: $teriary;
-      transition: $transition;
+      @include hover($teriary);
     }
   }
 
@@ -69,7 +65,7 @@ $transition: all 0.3s ease-in-out;
     background: none;
     border: 2px solid $teriary;
     color: $teriary;
-    transition: $transition;
+    @include transition(0.3s);
 
     @media (max-width: 575px) {
       font-size: 0.7rem;
@@ -79,7 +75,7 @@ $transition: all 0.3s ease-in-out;
     &:hover {
       background-color: $teriary;
       color: $primary;
-      transition: $transition;
+      @include transition(0.3s);
     }
   }
 }
@@ -123,7 +119,7 @@ $transition: all 0.3s ease-in-out;
   }
 
   @media (min-width: 1441px) {
-    padding-left: 17vw;
+    padding-left: 10vw;
   }
 
   @media (min-width: 1921px) {
