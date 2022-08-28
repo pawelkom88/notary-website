@@ -10,8 +10,8 @@
   color: #222;
   text-align: center;
   border-radius: 6px;
-  padding: 7px 0;
-  transition: opacity 0.3s ease;
+  padding: 7px 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 .tooltip:hover .tooltiptext {
@@ -27,4 +27,30 @@
   opacity: 1;
   transition: all 0.3s ease-in-out;
   pointer-events: unset;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 2px;
+  background-color: #002b12;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.line.open {
+  transform: rotate(-45deg) translate(-0.5rem, 0.1rem);
+}
+
+.line.open {
+  opacity: 0;
+}
+
+.line.open {
+  transform: rotate(45deg) translate(-0.6rem, -0.2rem);
 }/*# sourceMappingURL=utilities.css.map */

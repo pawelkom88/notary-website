@@ -1,4 +1,5 @@
-$transition: all 0.3s ease-in-out;
+@import "./colors";
+@import "./mixins";
 
 .tooltip .tooltiptext {
   position: absolute;
@@ -12,8 +13,8 @@ $transition: all 0.3s ease-in-out;
   color: #222;
   text-align: center;
   border-radius: 6px;
-  padding: 7px 0;
-  transition: opacity 0.3s ease;
+  padding: 7px 2px;
+  @include transition(0.3s);
 
   // @media (max-width: 900px) {
   //   display: none;
@@ -31,6 +32,32 @@ $transition: all 0.3s ease-in-out;
 
 .modal-active {
   opacity: 1;
-  transition: $transition;
+  @include transition(0.3s);
   pointer-events: unset;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 2px;
+  background-color: $primary;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.line.open {
+  transform: rotate(-45deg) translate(-0.5rem, 0.1rem);
+}
+
+.line.open {
+  opacity: 0;
+}
+
+.line.open {
+  transform: rotate(45deg) translate(-0.6rem, -0.2rem);
 }
