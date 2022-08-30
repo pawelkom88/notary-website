@@ -1,0 +1,25 @@
+.footer {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  background-color: #002b12;
+  color: #ffffff;
+  padding: 15vw 13vw;
+}
+.footer .phone,
+.footer .mail,
+.footer .social-media {
+  display: flex;
+  place-items: center;
+}
+
+.phone img,
+.mail img {
+  margin-right: 1rem;
+}
+
+.footer__contact {
+  display: grid;
+  grid-row: 1/6;
+}/*# sourceMappingURL=footer.css.map */

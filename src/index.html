@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/x-icon" href="/images/logo-webp.webp" />
+    <link rel="apple-touch-icon" href="https://sikorska-notary.netlify.app/logo-png.2bc4e0ea.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://sikorska-notary.netlify.app/logo-png.2bc4e0ea.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- META TAGS -->
+    <!-- META TAGS START-->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Sikorska Notary - mobile notary in Bristol and South West" />
+    <meta name="description" content="Sikorska notary is..." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/pawelkom88/notary-website/raw/main/social-media-card.png" />
+    <meta property="og:title" content="Sikorska Notary - mobile notary in Bristol and South West" />
+    <meta property="og:description" content="Sikorska notary is..." />
+    <meta property="og:image" content="" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/pawelkom88/notary-website/raw/main/social-media-card.png" />
+    <meta
+      property="twitter:title"
+      content="Sikorska Notary - mobile notary in Bristol and South West" />
+    <meta property="twitter:description" content="Sikorska notary is..." />
+    <meta property="twitter:image" content="" />
+    <!-- META TAGS END-->
+    <style>
+      @media (max-width: 575px) {
+        .hero {
+          background-image: url("/images/index-bg-mobile1.webp"),
+            url("/images/index-bg-mobile1.jpg");
+        }
+      }
+    </style>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hero.css" />
+    <link
+      rel="preload"
+      href="./css/partials/utilities.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="./css/partials/utilities.css" />
+    </noscript>
+    <link
+      rel="preload"
+      href="./css/partials/footer.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="./css/partials/footer.css" />
+    </noscript>
+    <link
+      rel="preload"
+      href="./css/partials/info.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="./css/partials/info.css" />
+    </noscript>
     <script defer src="./js/index.js"></script>
     <title>Sikorska Notary - mobile notary in Bristol and South West</title>
   </head>
@@ -16,14 +74,18 @@
     <section class="hero">
       <header>
         <nav class="nav-bar">
-          <picture>
-            <source media="(max-width:576px)" srcset="/images/logo-webp.webp" />
-            <img
-              class="logo"
-              src="/images/logo-png.png"
-              srcset="/images/logo-png.png 1x"
-              alt="Sikorska notary logo" />
-          </picture>
+          <a href="index.html">
+            <picture>
+              <source media="(max-width:576px)" srcset="/images/logo-webp.webp" />
+              <img
+                width="60"
+                height="48"
+                class="logo"
+                src="/images/logo-png.png"
+                srcset="/images/logo-png.png 1x"
+                alt="Sikorska notary logo" />
+            </picture>
+          </a>
           <ul class="nav-links">
             <li class="nav-link"><a href="service.html">Notarial service</a></li>
             <li class="nav-link"><a href="legislation.html">Apostille & Legislation</a></li>
@@ -31,20 +93,45 @@
             <li class="nav-link"><a href="index.html#contact">Contact</a></li>
           </ul>
           <div class="languages">
-            <img
-              width="20px"
-              height="20px"
-              class="language-icon pl"
-              src="/images/polish-flag.svg"
-              alt="Polish flag icon" />
-            <img
-              width="20px"
-              height="20px"
-              class="language-icon eng"
-              src="/images/uk-flag.svg"
-              alt="UK flag icon" />
+            <div class="tooltip">
+              <a href="index.html">
+                <img
+                  width="20"
+                  height="20"
+                  class="language-icon pl"
+                  src="/images/polish-flag.svg"
+                  alt="Polish flag icon"
+                  aria-describedby="pl" />
+              </a>
+              <span id="pl" class="hidden" aria-hidden="true">Chage language to Polish</span>
+              <span class="tooltiptext">change language to Polish</span>
+            </div>
+            <div class="tooltip">
+              <a href="#">
+                <!-- <a href="/pl/index.html"> -->
+                <img
+                  width="20"
+                  height="20"
+                  class="language-icon eng"
+                  src="/images/uk-flag.svg"
+                  alt="UK flag icon"
+                  aria-describedby="eng" />
+              </a>
+              <span id="eng" class="hidden" aria-hidden="true">Chage language to English</span>
+              <span class="tooltiptext">change language to English (active)</span>
+            </div>
           </div>
           <button type="button" class="btn cta-btn">Make an enquiry</button>
+          <div
+            role="button"
+            class="hamburger"
+            tabindex="0"
+            aria-expanded="false"
+            aria-label="show navigation menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
         </nav>
       </header>
       <h1 class="hero__heading">
@@ -52,17 +139,167 @@
         the notary that cares
       </h1>
       <p class="hero__paragraph">
-        Sikorska Notary provides a full range of notarial services for clients at their convenience.
+        I provide a full range of notarial services for clients at their convenience.
       </p>
       <a href="#main" class="btn hero__btn">Learn more</a>
-      <small>Lex est quod notamus</small>
+      <span class="latin">Lex est quod notamus</span>
     </section>
     <main id="main">
-      <section>
-        <h2>About</h2>
+      <section class="info">
+        <h2 class="info__heading">Welcome to Sikorska Notary</h2>
+        <p class="info__alert">Before contacting the Notary Public</p>
+        <p class="info__about">
+          The main function of a notary is to provide notarial services to clients who have
+          business, property or family interests abroad. It is especially important that a notary is
+          presented with the relevant information as soon as the client makes initial contact.
+          Before meeting a notary, a client will be interviewed regarding the matter and people
+          intervening in the act. This will aim to identify all documents and evidence that should
+          be presented to a notary for inspection.
+        </p>
+        <br />
+        <br />
+        <p class="info__about">
+          A notarisation provides guarantee that the act is lawful and not the result of fraud of
+          violence. Therefore, a notary must be satisfied with the identity of the person appearing
+          before him to sign a document, with that person’s mental and statutory capacity,
+          understanding of the act and willingness to be bound by the transaction. To help you
+          prepare for the meeting with a notary and understand typical stages of the notarial
+          activity, <span>please refer to the applicable guidance below</span>:
+        </p>
+        <div class="info__clients">
+          <button type="button" class="btn btn-individual">INDIVIDUAL CLIENTS</button>
+          <button type="button" class="btn btn-corporate">CORPORATE CLIENTS</button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <span
+          >--------------------------------------------------------------------------------------------------</span
+        >
+        <h4>PRZYCISKI CZY ROZWIJANE bez podstrony NOTARIAL SERVICE ????????????????????</h4>
+        <span
+          >--------------------------------------------------------------------------------------------------</span
+        >
+        <br />
+        <br />
+        <br />
+
+        <h2 class="info__heading">Notarial service</h2>
+
+        <p class="info__about">
+          In the vast majority of cases, the acts of an English or Welsh notary are destined for use
+          in a foreign jurisdiction. In consequence, there is a great deal of variety in the work of
+          a notary. The clients are varied as are the transactions and procedures that they are
+          involved in. It is impossible to list all potential notarial services. However, the most
+          common are listed below. If you are not sure if you need a notary’s help, please do not
+          hesitate to contact us.
+        </p>
+        <br />
+        <br />
+        <br />
+        <!-- DETAILS -->
+        <details>
+          <summary>INDIVIDUAL CLIENTS</summary>
+
+          FOR INDIVIDUAL CLIENTS: Witnessing Powers of Attorney for worldwide use Administering
+          oaths and affidavits for use abroad Consent letters to let one parent travel with children
+          Statutory declarations made before a notary (eg. confirming single status when getting
+          married abroad) Copies of passports (eg. for setting up a foreign bank account) Copies of
+          any other documents, which require a notarial seal (eg. qualification certificates)
+          Providing certificates certifying the genuineness of signatures and execution of private
+          documents and of copy documents Application forms (eg. Pension) Retirement life
+          certificates Purchases and sale of foreign properties and investments Transfers of land,
+          houses, shares Change of name deed and notarisation Adoption applications Certifying
+          translations of documents
+        </details>
+        <br />
+        <br />
+        <details>
+          <summary>CORPORATE CLIENTS</summary>
+          <ul class="summary">
+            <li>
+              Authenticating company and business documents and transactions (eg. resolutions,
+              minutes, certificates of incorporation, memorandum & articles of association,
+              accounts, reports).
+            </li>
+            <li>Notarisation of the corporate Powers of Attorney</li>
+            <li>Certification of Identity of Directors, Secretaries and other Company Officers.</li>
+            <li>
+              Certifying translations of documents Sale and purchase of commercial properties/land
+              abroad
+            </li>
+            <li>Affidavits and Statutory Declarations</li>
+            <li>
+              Authenticating documents used to set up bank account or business branch offices (eg.
+              Good Standing Certificates, Certificates of Law, Application forms)
+            </li>
+            <li>
+              Trademark Assignments Notarisation of the Loan Agreements and Mortgage documents
+              Certifying the execution of Commercial Contracts for International Use
+            </li>
+            <li>Share Pledges</li>
+          </ul>
+        </details>
+        <!-- DETAILS -->
       </section>
       <section class="contact"><h2>text + contact from</h2></section>
-      <footer>grid</footer>
+      <footer class="footer">
+        <div class="footer__contact">
+          <a href="index.html">
+            <img class="logo" src="/images/logo-png.png" alt="Sikorska notary logo" />
+          </a>
+          <div class="phone">
+            <img src="/images/phone-icon.png" alt="" />
+            <span>07456789321</span>
+          </div>
+          <div class="mail">
+            <img src="/images/email-icon.png" alt="" />
+            <span>info@sikorksa.org</span>
+          </div>
+          <div class="social-media">
+            <p>Social media</p>
+            <img src="/images/fb-icon.png" alt="" />
+            <img src="/images/linkedin-icon.png" alt="" />
+            <img src="/images/twitter-icon.png" alt="" />
+          </div>
+          <small class="copyright">PAwel</small>
+        </div>
+        <div class="footer__services">asd</div>
+        <div class="footer__links">asd</div>
+        <div class="footer__about">asd</div>
+      </footer>
     </main>
+    <div class="overlay"></div>
+    <div class="modal">
+      <span class="close">close</span>
+      <h4 class="info__heading">Make an Enquiry</h4>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="subject" value="New message from your website" />
+        <input type="hidden" name="apikey" value="APIKEY" />
+        <label for="name">Name:</label>
+        <input id="name" title="name" type="text" required placeholder="John Smith" />
+        <label for="e-mail">E-mail:</label>
+        <input
+          id="e-mail"
+          title="e-mail"
+          name="e-mail"
+          type="text"
+          placeholder="JohnSmith@gmail.com"
+          required />
+        <label for="message">Your enquiry:</label>
+        <textarea
+          title="message"
+          name="message"
+          id="message"
+          cols="40"
+          rows="10"
+          required
+          placeholder=""></textarea>
+        <input id="checkbox" type="checkbox" name="botcheck" style="display: none" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+        <button type="submit" class="btn form_btn">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
