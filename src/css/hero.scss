@@ -1,5 +1,6 @@
 @import "./partials/colors";
 @import "./partials/mixins";
+@import "./partials/breakpoints";
 
 @font-face {
   font-family: "PlayfairDisplay";
@@ -16,10 +17,6 @@
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   z-index: 1;
-
-  // @media (max-width: 575px) {
-  //   background-image: url("/images/index-bg-mobile1.webp"), url("/images/index-bg-mobile1.jpg");
-  // }
 
   &::before {
     content: "";
@@ -51,7 +48,7 @@
     padding: 0.5rem 1.2rem;
     @include transition(0.3s);
 
-    @media (max-width: 900px) {
+    @media (max-width: $tablet) {
       display: none;
     }
 
@@ -67,7 +64,7 @@
     color: $teriary;
     @include transition(0.3s);
 
-    @media (max-width: 575px) {
+    @media (max-width: $mobile) {
       font-size: 0.7rem;
       padding: 0.5rem 1rem;
     }
@@ -91,14 +88,14 @@
 }
 
 .nav-links {
-  @media (max-width: 900px) {
+  @media (max-width: $tablet) {
     display: none;
   }
 }
 
 .nav-link {
   font-size: clamp(0.7rem, 0.4rem + 0.7vw, 1.2rem);
-  margin-right: 25px;
+  margin-right: 2vw;
 
   &:hover {
     text-decoration: underline;
@@ -114,15 +111,11 @@
 .languages {
   display: flex;
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet) {
     display: none;
   }
 
-  @media (min-width: 1441px) {
-    padding-left: 10vw;
-  }
-
-  @media (min-width: 1921px) {
+  @media (min-width: $ultra) {
     padding-left: 25vw;
   }
 }
@@ -143,7 +136,7 @@
   bottom: 5vh;
   font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
 
-  @media (max-width: 575px) {
+  @media (max-width: $mobile) {
     display: none;
   }
 }
