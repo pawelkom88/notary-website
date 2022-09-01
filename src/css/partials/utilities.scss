@@ -1,24 +1,20 @@
 @import "./colors";
 @import "./mixins";
 
-.tooltip .tooltiptext {
+.tooltiptext {
   position: absolute;
-  top: 9.5vh;
+  top: 11vh;
   right: 23%;
+  width: 150px;
   font-size: 0.8rem;
   font-weight: bold;
-  opacity: 0;
-  width: 150px;
-  background-color: #fff;
   color: #222;
+  background-color: #fff;
   text-align: center;
-  border-radius: 6px;
   padding: 7px 2px;
+  opacity: 0;
+  border-radius: 6px;
   @include transition(0.3s);
-
-  // @media (max-width: 900px) {
-  //   display: none;
-  // }
 }
 
 .tooltip:hover .tooltiptext {
@@ -42,6 +38,7 @@
   cursor: pointer;
 }
 
+// hamburger
 .line {
   width: 25px;
   height: 2px;
