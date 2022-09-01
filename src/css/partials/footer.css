@@ -1,40 +1,82 @@
 .footer {
-  min-height: 70vh;
+  min-height: 50vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 80px);
-  gap: 0 6rem;
-  background-color: #002b12;
+  grid-template-columns: 15vw 1fr 1fr 15vw;
+  font-size: clamp(0.7rem, 10px + 0.3vw, 1rem);
   color: #ffffff;
   padding: 10vw 15vw;
+  background-color: #002b12;
+  letter-spacing: 1.2px;
+}
+@media (max-width: 1200px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10vw 1vw 10vw 8vw;
+  }
+  .footer__about {
+    grid-column: span 6;
+    grid-row: 2/4;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 10vw;
+  }
+  .footer__contact, .footer__services, .footer__links, .footer__about {
+    grid-column: 1/2;
+  }
 }
 .footer .phone img,
 .footer .mail img {
   max-width: 20px;
   margin-right: 1rem;
 }
-.footer .footer__contact,
-.footer .footer__services,
-.footer .footer__links {
+.footer__contact, .footer__services, .footer__links, .footer__about {
   display: grid;
-  grid-row: 1/6;
 }
-.footer .footer__contact *,
-.footer .footer__services *,
-.footer .footer__links * {
-  display: flex;
-  place-items: center;
+.footer__contact *, .footer__services *, .footer__links *, .footer__about * {
+  margin: 6px 0;
 }
-
 .footer__services-links {
   position: relative;
+}
+.footer__services-links:hover {
+  color: yellow;
 }
 .footer__services-links::after {
   content: "";
   position: absolute;
-  bottom: 1.5rem;
+  top: 1.5rem;
   left: 0;
-  width: 100%;
+  width: 70%;
   height: 1px;
   background-color: #ecc96e;
+}
+.footer__services-title {
+  font-weight: bold;
+}
+.footer__contact .copyright {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+.footer .faculty-logo {
+  margin: 0 auto;
+  max-width: 70px;
+  justify-self: center;
+}
+
+.social__media,
+.phone,
+.mail {
+  display: flex;
+  place-items: center;
+}
+.social__media a,
+.phone a,
+.mail a {
+  margin-right: 1rem;
 }/*# sourceMappingURL=footer.css.map */
