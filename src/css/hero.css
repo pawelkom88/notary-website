@@ -107,6 +107,7 @@
 }
 
 .languages {
+  position: relative;
   display: flex;
 }
 @media (max-width: 900px) {
@@ -121,7 +122,6 @@
 }
 
 .language-icon {
-  position: relative;
   max-width: 100px;
   cursor: pointer;
 }
