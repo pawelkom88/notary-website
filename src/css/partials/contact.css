@@ -1,0 +1,18 @@
+.contact__about {
+  margin: 4rem auto;
+  max-width: 95ch;
+}
+
+.contact > .form {
+  max-width: 50%;
+  margin: 0 auto 4rem;
+}
+@media (max-width: 900px) {
+  .contact > .form {
+    max-width: 100%;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}/*# sourceMappingURL=contact.css.map */
