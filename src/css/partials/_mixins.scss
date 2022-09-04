@@ -1,10 +1,10 @@
-@mixin transition($length) {
-  transition: all $length ease-in-out;
+@mixin transition($property: all, $length) {
+  transition: $property $length ease-in-out;
 }
 
 @mixin hover($border-color) {
   background: none;
   border: 2px solid $border-color;
   color: $border-color;
-  @include transition(0.3);
+  @include transition(all, 0.3);
 }
