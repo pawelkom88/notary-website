@@ -4,8 +4,8 @@
 
 .tooltiptext {
   position: absolute;
-  top: 11vh;
-  right: 23%;
+  top: 35px;
+  left: -10%;
   width: 150px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -15,7 +15,7 @@
   padding: 7px 2px;
   opacity: 0;
   border-radius: 6px;
-  @include transition(0.3s);
+  @include transition(all, 0.3s);
 }
 
 .tooltip:hover .tooltiptext {
@@ -33,7 +33,7 @@
 
 .modal-active {
   opacity: 1;
-  @include transition(0.3s);
+  @include transition(all, 0.3s);
   pointer-events: unset;
 }
 
@@ -91,8 +91,8 @@
 }
 
 .mobile__menu {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -103,7 +103,7 @@
   visibility: hidden;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  border: 2rem solid $primary;
+  border: 1rem solid $primary;
 
   &-links {
     margin-top: 40vh;

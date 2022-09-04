@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #002b12;
+  border-bottom-left-radius: 4rem;
+  padding: 4rem;
+}
+@media (max-width: 575px) {
+  .form {
+    padding: 2.5rem;
+  }
+}
+.form label {
+  margin-bottom: 0.3rem;
+}
+.form input,
+.form textarea {
+  padding: 0.8rem;
+}
+@media (max-width: 575px) {
+  .form input,
+.form textarea {
+    padding: 0.5rem;
+  }
+}
+.form input,
+.form textarea {
+  background-color: #f2f2f2;
+  margin-bottom: 1rem;
+  border: none;
+}
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+  opacity: 0.4;
+}
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  opacity: 0.4;
+}
+@media (max-width: 575px) {
+  .form input::-moz-placeholder, .form textarea::-moz-placeholder {
+    font-size: 0.8rem;
+  }
+  .form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .form input::placeholder,
+.form textarea::placeholder {
+    font-size: 0.8rem;
+  }
+}
+.form .form_btn {
+  color: #ffffff;
+  background-color: #69502B;
+  border: 2px solid #ffffff;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.form .form_btn:hover {
+  background-color: #ffffff;
+  color: #69502B;
+  border: 2px solid #69502B;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=form.css.map */

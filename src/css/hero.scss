@@ -50,7 +50,7 @@
     letter-spacing: 1px;
     border: 2px solid $teriary;
     padding: 0.5rem 1rem;
-    @include transition(0.3s);
+    @include transition(all, 0.3s);
 
     @media (max-width: $tablet) {
       display: none;
@@ -66,7 +66,7 @@
     background: none;
     border: 2px solid $teriary;
     color: $teriary;
-    @include transition(0.3s);
+    @include transition(all, 0.3s);
 
     @media (max-width: $mobile) {
       font-size: 0.7rem;
@@ -76,7 +76,7 @@
     &:hover {
       background-color: $teriary;
       color: $primary;
-      @include transition(0.3s);
+      @include transition(all, 0.3s);
     }
   }
 }
@@ -115,6 +115,7 @@
 }
 
 .languages {
+  position: relative;
   display: flex;
 
   @media (max-width: $tablet) {
@@ -127,7 +128,6 @@
 }
 
 .language-icon {
-  position: relative;
   max-width: 100px;
   cursor: pointer;
 }
