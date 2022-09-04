@@ -1,0 +1,58 @@
+@import "./colors";
+@import "./breakpoints";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid $primary;
+  border-bottom-left-radius: 4rem;
+  padding: 4rem;
+
+  @media (max-width: $mobile) {
+    padding: 2.5rem;
+  }
+
+  & label {
+    margin-bottom: 0.3rem;
+  }
+
+  & input,
+  textarea {
+    padding: 0.8rem;
+
+    @media (max-width: $mobile) {
+      padding: 0.5rem;
+    }
+  }
+
+  & input,
+  textarea {
+    background-color: $grey;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  & input::placeholder,
+  textarea::placeholder {
+    opacity: 0.4;
+
+    @media (max-width: $mobile) {
+      font-size: 0.8rem;
+    }
+  }
+
+  & .form_btn {
+    color: $white;
+    background-color: $secondary;
+    border: 2px solid $white;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $white;
+      color: $secondary;
+      border: 2px solid $secondary;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
