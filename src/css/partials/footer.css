@@ -7,8 +7,12 @@
   background-color: #002b12;
   letter-spacing: 1.2px;
 }
+.footer__about-title {
+  text-align: center;
+}
 .footer__about-description {
   font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 1200px) {
   .footer {
@@ -47,14 +51,14 @@
   position: relative;
 }
 .footer__services-links:hover {
-  color: yellow;
+  color: #ecc96e;
 }
 .footer__services-links::after {
   content: "";
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   left: 0;
-  width: 90%;
+  width: 100%;
   height: 1px;
   background-color: #ecc96e;
 }
