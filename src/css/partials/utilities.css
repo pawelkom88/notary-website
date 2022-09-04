@@ -23,6 +23,10 @@
   display: none;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .modal-active {
   opacity: 1;
   transition: all 0.3s ease-in-out;
@@ -32,25 +36,80 @@
 .hamburger {
   display: none;
   position: relative;
+  width: 25px;
+  height: 25px;
+  z-index: 2;
   cursor: pointer;
+}
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 .line {
+  position: absolute;
+  top: 2px;
+  left: 0;
   width: 25px;
   height: 2px;
-  background-color: #002b12;
-  margin: 3px 0;
-  transition: 0.4s;
+  background-color: #ffffff;
+  transition: 0.8s;
+  border-radius: 1px;
+}
+.line:nth-child(2) {
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+.line:nth-child(3) {
+  position: absolute;
+  top: 12px;
+  left: 0;
 }
 
-.line.open {
-  transform: rotate(-45deg) translate(-0.5rem, 0.1rem);
+.line:first-child.open {
+  transform: rotate(-45deg) translate(-0.7rem, -0.1rem);
 }
 
-.line.open {
+.line:nth-child(2).open {
   opacity: 0;
 }
 
-.line.open {
-  transform: rotate(45deg) translate(-0.6rem, -0.2rem);
+.line:nth-child(3).open {
+  transform: rotate(45deg) translate(-0.5rem, 0.2rem);
+}
+
+.hamburger-open {
+  background-color: #002b12;
+  z-index: 100;
+}
+
+.mobile__menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: #002b12;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2rem solid #002b12;
+}
+.mobile__menu-links {
+  margin-top: 40vh;
+}
+.mobile__menu-link {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.menu-open {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease-in-out;
 }/*# sourceMappingURL=utilities.css.map */
