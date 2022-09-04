@@ -1,7 +1,7 @@
 .tooltiptext {
   position: absolute;
-  top: 11vh;
-  right: 23%;
+  top: 35px;
+  left: -10%;
   width: 150px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -86,8 +86,8 @@
 }
 
 .mobile__menu {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,7 +98,7 @@
   visibility: hidden;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  border: 2rem solid #002b12;
+  border: 1rem solid #002b12;
 }
 .mobile__menu-links {
   margin-top: 40vh;
