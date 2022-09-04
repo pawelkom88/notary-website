@@ -131,41 +131,6 @@ section {
 .modal .info__heading {
   margin-top: 0;
 }
-.modal .form {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #002b12;
-  border-bottom-left-radius: 4rem;
-  padding: 4rem;
-}
-.modal .form label {
-  margin-bottom: 0.3rem;
-}
-.modal .form input,
-.modal .form textarea {
-  padding: 0.8rem;
-}
-.modal .form input,
-.modal .form textarea {
-  background-color: #f2f2f2;
-  margin-bottom: 1rem;
-  border: none;
-}
-.modal .form input::-moz-placeholder, .modal .form textarea::-moz-placeholder {
-  opacity: 0.4;
-}
-.modal .form input:-ms-input-placeholder, .modal .form textarea:-ms-input-placeholder {
-  opacity: 0.4;
-}
-.modal .form input::placeholder,
-.modal .form textarea::placeholder {
-  opacity: 0.4;
-}
-.modal .form .form_btn {
-  color: #ffffff;
-  background-color: #69502B;
-  letter-spacing: 1px;
-}
 @media (min-width: 900px) {
   .modal {
     width: 50vw;

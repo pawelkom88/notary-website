@@ -59,7 +59,7 @@ section {
   pointer-events: none;
   border-radius: 5px;
   z-index: 2;
-  @include transition(0.3s);
+  @include transition(all, 0.3s);
 
   & .close {
     position: absolute;
@@ -72,43 +72,7 @@ section {
     margin-top: 0;
   }
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid $primary;
-    border-bottom-left-radius: 4rem;
-    padding: 4rem;
-
-    & label {
-      margin-bottom: 0.3rem;
-    }
-
-    & input,
-    textarea {
-      padding: 0.8rem;
-    }
-
-    & input,
-    textarea {
-      background-color: $grey;
-      margin-bottom: 1rem;
-      border: none;
-    }
-
-    & input::placeholder,
-    textarea::placeholder {
-      opacity: 0.4;
-    }
-
-    & .form_btn {
-      color: $white;
-      background-color: $secondary;
-      letter-spacing: 1px;
-    }
-  }
-
   @media (min-width: $tablet) {
-    // CHANGE !!!!!!!!!!!!!
     width: 50vw;
     min-height: 70vh;
   }
@@ -124,6 +88,6 @@ section {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
-  @include transition(0.3s);
+  @include transition(all, 0.3s);
   z-index: 1;
 }
