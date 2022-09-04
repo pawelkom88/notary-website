@@ -18,6 +18,10 @@
   background-size: cover, cover;
   z-index: 1;
 
+  @media (max-width: $tablet) {
+    background-image: url("/images/index-bg-mobile.webp"), url("/images/index-bg-mobile.jpg");
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -31,21 +35,21 @@
     font-family: "PlayfairDisplay", san-serif;
     font-size: clamp(1.8rem, 1rem + 2.5vw, 5rem);
     font-weight: normal;
-    margin-top: 23vh;
+    margin-top: 25vh;
     text-transform: uppercase;
   }
 
   &__paragraph {
-    font-size: clamp(1rem, 0.3rem + 1vw, 2rem);
+    font-size: clamp(1.1rem, 0.4rem + 1vw, 2rem);
     font-weight: lighter;
-    margin-top: 1vh;
+    margin: 2vh 0;
   }
 
   & .cta-btn {
     border: none;
     letter-spacing: 1px;
     border: 2px solid $teriary;
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1rem;
     @include transition(0.3s);
 
     @media (max-width: $tablet) {
@@ -85,6 +89,7 @@
 .nav-bar {
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .nav-links {
@@ -106,6 +111,7 @@
   width: 50px !important;
   height: 40px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .languages {
@@ -134,7 +140,9 @@
   position: absolute;
   right: 15vw;
   bottom: 5vh;
-  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+  font-size: clamp(0.9rem, 0.4rem + 1vw, 2rem);
+  font-weight: lighter;
+  opacity: 0.8;
 
   @media (max-width: $mobile) {
     display: none;
