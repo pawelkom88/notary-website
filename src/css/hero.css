@@ -7,14 +7,14 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background-image: url("/images/index-bg1.webp"), url("/images/index-bg.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-image: url("/images/index-bg1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
 }
 @media (max-width: 900px) {
   .hero {
-    background-image: url("/images/index-bg-mobile.webp"), url("/images/index-bg-mobile.jpg");
+    background-image: url("/images/index-bg-mobile.webp");
   }
 }
 .hero::before {
@@ -38,10 +38,11 @@
   margin: 2vh 0;
 }
 .hero .cta-btn {
-  border: none;
+  font-size: clamp(0.7rem, 0.1rem + 1vw, 0.9rem);
   letter-spacing: 1px;
   border: 2px solid #ecc96e;
   padding: 0.5rem 1rem;
+  border: none;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 900px) {
@@ -100,10 +101,8 @@
 }
 
 .logo {
-  width: 50px !important;
-  height: 40px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 100;
 }
 
 .languages {
@@ -115,7 +114,7 @@
     display: none;
   }
 }
-@media (min-width: 1921) {
+@media (min-width: 1921px) {
   .languages {
     padding-left: 25vw;
   }
