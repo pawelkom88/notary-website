@@ -138,6 +138,12 @@ section {
 }
 @media (min-width: 900px) {
   .modal {
+    width: 70vw;
+    min-height: 70vh;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
     width: 50vw;
     min-height: 70vh;
   }

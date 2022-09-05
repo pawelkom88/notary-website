@@ -77,6 +77,11 @@ section {
   }
 
   @media (min-width: $tablet) {
+    width: 70vw;
+    min-height: 70vh;
+  }
+
+  @media (min-width: $laptop) {
     width: 50vw;
     min-height: 70vh;
   }
