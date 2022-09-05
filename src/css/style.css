@@ -82,7 +82,12 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 3vw 13vw;
+  padding: 3vw 12vw;
+}
+@media (max-width: 1441px) {
+  section {
+    padding: 2vw 8vw;
+  }
 }
 @media (max-width: 1200px) {
   section {

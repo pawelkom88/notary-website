@@ -36,10 +36,11 @@
 .hamburger {
   display: none;
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 30px;
   z-index: 2;
   cursor: pointer;
+  overflow: hidden;
 }
 @media (max-width: 900px) {
   .hamburger {
@@ -50,7 +51,7 @@
 .line {
   position: absolute;
   top: 2px;
-  left: 0;
+  left: 5px;
   width: 25px;
   height: 2px;
   background-color: #ffffff;
@@ -60,12 +61,10 @@
 .line:nth-child(2) {
   position: absolute;
   top: 7px;
-  left: 0;
 }
 .line:nth-child(3) {
   position: absolute;
   top: 12px;
-  left: 0;
 }
 
 .line:first-child.open {
@@ -86,30 +85,39 @@
 }
 
 .mobile__menu {
+  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   background-color: #ffffff;
   color: #002b12;
   overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
   text-align: center;
-  transition: all 0.2s ease-in-out;
-  border: 1rem solid #002b12;
+  border: 2px solid #002b12;
 }
 .mobile__menu-links {
-  margin-top: 40vh;
+  margin: 4rem;
 }
 .mobile__menu-link {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.mobile__menu-contact {
+  display: flex;
+  justify-content: center;
+}
+.mobile__menu-contact a {
+  margin: 1.5rem;
+  width: 30px;
+}
+.mobile__menu .opening-times {
+  margin: 1.5rem 0;
 }
 
 .menu-open {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=utilities.css.map */

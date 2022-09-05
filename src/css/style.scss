@@ -23,7 +23,11 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 3vw 13vw;
+  padding: 3vw 12vw;
+
+  @media (max-width: $desktop) {
+    padding: 2vw 8vw;
+  }
 
   @media (max-width: $laptop) {
     padding: 2vw 6vw;
