@@ -100,6 +100,15 @@ section {
   }
 }
 
+.heading {
+  font-family: "PlayfairDisplay", san-serif;
+  font-size: clamp(1.4rem, 12px + 1.5vw, 1.6rem);
+  color: #69502B;
+  text-transform: uppercase;
+  margin: 3rem 0;
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   background-color: #ecc96e;
