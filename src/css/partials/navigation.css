@@ -6,7 +6,6 @@
 .nav-bar {
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
 }
 
 @media (max-width: 900px) {

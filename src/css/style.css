@@ -83,7 +83,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 3vw 12vw;
+  padding: 2vw 12vw 1vw;
 }
 @media (max-width: 1441px) {
   section {
@@ -107,6 +107,10 @@ section {
   color: #69502B;
   text-transform: uppercase;
   margin: 3rem 0;
+  text-align: center;
+}
+
+h3 {
   text-align: center;
 }
 

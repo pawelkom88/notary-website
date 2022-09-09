@@ -7,9 +7,21 @@
   background-color: #002b12;
   letter-spacing: 1.2px;
 }
+@media (min-width: 1200px) and (max-width: 1441px) {
+  .footer {
+    grid-template-columns: 19vw 1fr 1fr 19vw;
+    padding: 10vw;
+  }
+}
 @media (min-width: 1441px) {
   .footer {
     gap: 0 4rem;
+  }
+}
+@media (min-width: 1921px) {
+  .footer {
+    padding: 10vw 22vw;
+    gap: 0;
   }
 }
 .footer__about-title {

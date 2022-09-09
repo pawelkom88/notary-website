@@ -10,8 +10,18 @@
   background-color: $primary;
   letter-spacing: 1.2px;
 
+  @media (min-width: $laptop) and (max-width: $desktop) {
+    grid-template-columns: 19vw 1fr 1fr 19vw;
+    padding: 10vw;
+  }
+
   @media (min-width: $desktop) {
     gap: 0 4rem;
+  }
+
+  @media (min-width: $ultra) {
+    padding: 10vw 22vw;
+    gap: 0;
   }
 
   &__about {
