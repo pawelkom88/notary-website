@@ -1,11 +1,17 @@
-@import "./colors";
-@import "./mixins";
-@import "./breakpoints";
+@import "../colors";
+@import "../mixins";
+@import "../breakpoints";
 
-.tooltiptext {
+.languages {
+  position: relative;
+  margin: 0;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
   position: absolute;
-  top: 35px;
-  left: -10%;
+  top: 3rem;
+  left: 0;
   width: 150px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -13,14 +19,8 @@
   background-color: #fff;
   text-align: center;
   padding: 7px 2px;
-  opacity: 0;
   border-radius: 6px;
   @include transition(all, 0.3s);
-}
-
-.tooltip:hover .tooltiptext {
-  opacity: 1;
-  transition: opacity 0.3s ease;
 }
 
 .hidden {

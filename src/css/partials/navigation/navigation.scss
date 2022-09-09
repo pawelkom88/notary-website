@@ -1,6 +1,6 @@
-@import "./breakpoints";
-@import "./colors";
-@import "./mixins";
+@import "../breakpoints";
+@import "../colors";
+@import "../mixins";
 
 .nav-bar,
 .nav-links {
@@ -54,10 +54,6 @@
 
   @media (max-width: $tablet) {
     display: none;
-  }
-
-  @media (min-width: $ultra) {
-    padding-left: 25vw;
   }
 }
 

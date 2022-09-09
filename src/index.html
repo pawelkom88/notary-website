@@ -104,7 +104,12 @@
             <li class="nav-link"><a href="index.html#contact">Contact</a></li>
           </ul>
           <div class="languages">
-            <div class="tooltip">
+            <span
+              class="tooltip"
+              id="pl"
+              aria-hidden="true"
+              data-tooltip=" Chage language to Polish"
+              role="tooltip">
               <a href="index.html">
                 <img
                   width="20"
@@ -114,12 +119,14 @@
                   alt="Polish flag icon"
                   aria-describedby="pl" />
               </a>
-              <span id="pl" class="hidden" aria-hidden="true">Chage language to Polish</span>
-              <span class="tooltiptext">change language to Polish</span>
-            </div>
-            <div class="tooltip">
+            </span>
+            <span
+              class="tooltip"
+              id="eng"
+              aria-hidden="true"
+              data-tooltip="Chage language to English"
+              role="tooltip">
               <a href="#">
-                <!-- <a href="/pl/index.html"> -->
                 <img
                   width="20"
                   height="20"
@@ -128,9 +135,7 @@
                   alt="UK flag icon"
                   aria-describedby="eng" />
               </a>
-              <span id="eng" class="hidden" aria-hidden="true">Chage language to English</span>
-              <span class="tooltiptext">selected language</span>
-            </div>
+            </span>
           </div>
           <button type="button" class="btn cta-btn">Make an enquiry</button>
           <div
