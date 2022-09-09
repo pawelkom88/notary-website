@@ -3,7 +3,7 @@
   grid-template-columns: 15vw 1fr 1fr 15vw;
   gap: 0 2rem;
   color: #ffffff;
-  padding: 10vw 15vw;
+  padding: 10vw 12vw;
   background-color: #002b12;
   letter-spacing: 1.2px;
 }
@@ -82,14 +82,14 @@
 .footer__services-title {
   font-weight: bold;
 }
-.footer__contact .phone svg,
-.footer__contact .mail svg {
+.footer .phone svg,
+.footer .mail svg {
   max-width: 20px;
   margin-right: 1rem;
 }
 @media (max-width: 575px) {
-  .footer__contact .phone svg,
-.footer__contact .mail svg {
+  .footer .phone svg,
+.footer .mail svg {
     max-width: 20px;
   }
 }

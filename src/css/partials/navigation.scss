@@ -1,0 +1,85 @@
+@import "./breakpoints";
+@import "./colors";
+@import "./mixins";
+
+.nav-bar,
+.nav-links {
+  display: flex;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.nav-links {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-size: clamp(0.7rem, 0.4rem + 0.7vw, 1.2rem);
+  margin-right: 2vw;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.cta-btn {
+  font-size: clamp(0.7rem, 0.1rem + 1vw, 0.9rem);
+  letter-spacing: 1px;
+  border: 2px solid $teriary;
+  padding: 0.5rem 1rem;
+  @include transition(all, 0.3s);
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  &:hover {
+    @include hover($teriary);
+  }
+}
+
+.languages {
+  position: relative;
+  display: flex;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $ultra) {
+    padding-left: 25vw;
+  }
+}
+
+.language-icon {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.pl {
+  margin-right: 10px;
+}
+
+.latin {
+  position: absolute;
+  right: 15vw;
+  bottom: 5vh;
+  font-size: clamp(0.9rem, 0.4rem + 1vw, 2rem);
+  font-weight: lighter;
+  opacity: 0.8;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}

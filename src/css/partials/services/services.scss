@@ -1,0 +1,17 @@
+@import "../colors";
+@import "../mixins";
+@import "../breakpoints";
+
+body {
+  background-color: $white;
+}
+
+header {
+  background-color: $primary;
+  color: $white;
+  @include pagePadding;
+}
+
+main {
+  background-color: $white;
+}

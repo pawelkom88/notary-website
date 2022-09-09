@@ -17,25 +17,12 @@ html {
 
 body {
   font-family: "Roboto-Light", "Calibri", sans-serif;
-  // font-family: "Calibri ", sans-serif;
   letter-spacing: 1px;
 }
 
 section {
   min-height: 100vh;
-  padding: 3vw 12vw;
-
-  @media (max-width: $desktop) {
-    padding: 2vw 8vw;
-  }
-
-  @media (max-width: $laptop) {
-    padding: 2vw 6vw;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 4vw 8vw;
-  }
+  @include pagePadding;
 }
 
 .btn {

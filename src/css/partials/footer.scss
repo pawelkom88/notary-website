@@ -6,7 +6,7 @@
   grid-template-columns: 15vw 1fr 1fr 15vw;
   gap: 0 2rem;
   color: $white;
-  padding: 10vw 15vw;
+  padding: 10vw 12vw;
   background-color: $primary;
   letter-spacing: 1.2px;
 
@@ -93,31 +93,13 @@
     }
   }
 
-  &__contact {
-    &-logo {
-      // max-width: 20%;
+  .phone svg,
+  .mail svg {
+    max-width: 20px;
+    margin-right: 1rem;
 
-      // @media (max-width: $laptop) {
-      //   max-width: 50%;
-      // }
-
-      // @media (min-width: $tablet) {
-      //   max-width: 50%;
-      // }
-
-      // @media (min-width: $laptop) {
-      //   max-width: 38%;
-      // }
-    }
-
-    .phone svg,
-    .mail svg {
+    @media (max-width: $mobile) {
       max-width: 20px;
-      margin-right: 1rem;
-
-      @media (max-width: $mobile) {
-        max-width: 20px;
-      }
     }
   }
 }

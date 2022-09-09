@@ -8,3 +8,19 @@
   color: $border-color;
   @include transition(all, 0.3);
 }
+
+@mixin pagePadding {
+  padding: 3vw 12vw;
+
+  @media (max-width: $desktop) {
+    padding: 2vw 8vw;
+  }
+
+  @media (max-width: $laptop) {
+    padding: 2vw 6vw;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 4vw 8vw;
+  }
+}
