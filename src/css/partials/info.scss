@@ -13,23 +13,11 @@
     padding: 2vw 6vw;
   }
 
-  &__heading,
-  &__alert {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  &__heading {
-    font-family: "PlayfairDisplay", san-serif;
-    font-size: clamp(1.4rem, calc(12px + 1.5vw), 1.6rem);
-    color: $secondary;
-    text-transform: uppercase;
-    margin-top: 4rem;
-  }
-
   &__alert {
     font-size: clamp(1.1rem, calc(10px + 0.7vw), 1.7rem);
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
   &__about {
