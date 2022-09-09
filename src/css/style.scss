@@ -47,29 +47,31 @@ section {
 }
 
 .modal {
-  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
-  padding: 6vw 8vw;
+  max-height: 95vh;
+  padding: 4vw 8vw;
   margin: 0 auto;
   background-color: $white;
   pointer-events: none;
   border-radius: 5px;
+  opacity: 0;
   z-index: 2;
   @include transition(all, 0.3s);
+
+  & .heading {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 
   & .close {
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-  }
-
-  & .info__heading {
-    margin-top: 0;
   }
 
   @media (min-width: $tablet) {
@@ -95,4 +97,39 @@ section {
   pointer-events: none;
   @include transition(all, 0.3s);
   z-index: 1;
+}
+
+.page-padding {
+  max-width: 90ch;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 2vw 0;
+
+  @media (max-width: $tablet) {
+    padding: 2vw 6vw;
+  }
+}
+
+.paragraph {
+  $font: clamp(1rem, calc(12px + 0.5vw), 1.5rem);
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  text-indent: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  & a {
+    text-decoration: underline;
+  }
+
+  & span {
+    text-decoration: underline;
+  }
+}
+
+.list-item {
+  list-style-type: " \2014";
+  margin: 1rem 0 0 2rem;
+  padding-left: 1rem;
 }
