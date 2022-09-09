@@ -31,4 +31,9 @@ header {
 
 main {
   background-color: #ffffff;
+}
+
+.corporate-clients,
+.individual-clients {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=services.css.map */
