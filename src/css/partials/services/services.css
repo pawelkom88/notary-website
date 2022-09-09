@@ -1,0 +1,28 @@
+body {
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #002b12;
+  color: #ffffff;
+  padding: 3vw 12vw;
+}
+@media (max-width: 1441px) {
+  header {
+    padding: 2vw 8vw;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 2vw 6vw;
+  }
+}
+@media (max-width: 575px) {
+  header {
+    padding: 4vw 8vw;
+  }
+}
+
+main {
+  background-color: #ffffff;
+}/*# sourceMappingURL=services.css.map */
