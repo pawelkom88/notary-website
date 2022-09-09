@@ -10,7 +10,7 @@
 }
 
 @mixin pagePadding {
-  padding: 3vw 12vw;
+  padding: 2vw 12vw 1vw;
 
   @media (max-width: $desktop) {
     padding: 2vw 8vw;
