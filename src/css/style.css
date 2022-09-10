@@ -233,4 +233,20 @@ h3 {
 .underline {
   text-decoration: underline;
   line-height: 1.8;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: clamp(0.625rem, 0.1563rem + 2.5vw, 0.9375rem);
+  list-style-type: none;
+  margin: 2rem 0;
+}
+.breadcrumb li::after {
+  margin-right: 10px;
+  content: " / ";
+}
+.breadcrumb .current {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
