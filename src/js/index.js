@@ -1,13 +1,10 @@
 function innit() {
   const body = document.querySelector("body");
   const ctaBtn = document.querySelector(".cta-btn");
-  const submitBtn = document.querySelector(".form_btn");
   const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
   const closeBtn = document.querySelector(".close");
   const hamburger = document.querySelector(".hamburger");
-  const lines = document.querySelectorAll(".line");
-  const mobileMenu = document.querySelector(".mobile__menu");
   const mobileLink = document.querySelectorAll(".mobile__menu-link");
   const contactLink = mobileLink[mobileLink.length - 1];
 
@@ -53,6 +50,9 @@ function innit() {
   //////////////////////////////////////
 
   function openMobileMenu() {
+    const mobileMenu = document.querySelector(".mobile__menu");
+    const lines = document.querySelectorAll(".line");
+    
     mobileMenu.classList.toggle("menu-open");
     body.classList.toggle("overflow");
 
@@ -102,6 +102,7 @@ function innit() {
     const lastEl = document.querySelector(".btn-focus");
 
     modal.addEventListener("keydown", e => {
+      const submitBtn = document.querySelector(".form_btn");
       const isTabPressed = e.key === "Tab";
       const hasFocus = document.activeElement;
 
