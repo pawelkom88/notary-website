@@ -52,7 +52,7 @@ function innit() {
   function openMobileMenu() {
     const mobileMenu = document.querySelector(".mobile__menu");
     const lines = document.querySelectorAll(".line");
-    
+
     mobileMenu.classList.toggle("menu-open");
     body.classList.toggle("overflow");
 
@@ -63,9 +63,8 @@ function innit() {
 
     if (hamburger.getAttribute("aria-expanded") === "false") {
       hamburger.setAttribute("aria-expanded", true);
-    } else {
-      hamburger.setAttribute("aria-expanded", false);
     }
+    hamburger.setAttribute("aria-expanded", false);
   }
 
   function removeActiveClasses() {
