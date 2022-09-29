@@ -1,71 +1,37 @@
 .footer {
-  display: grid;
-  grid-template-columns: 15vw 1fr 1fr 15vw;
-  gap: 0 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
   color: #ffffff;
-  padding: 10vw 12vw;
+  padding: 10vw 16vw;
   background-color: #002b12;
   letter-spacing: 1.2px;
 }
-@media (min-width: 1200px) and (max-width: 1441px) {
+@media (max-width: 1441px) {
   .footer {
-    grid-template-columns: 19vw 1fr 1fr 19vw;
-    padding: 10vw;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
-@media (min-width: 1441px) {
-  .footer {
-    gap: 0 4rem;
+.footer__contact, .footer__services, .footer__about {
+  flex-basis: 100%;
+}
+@media (max-width: 1441px) {
+  .footer__contact, .footer__services, .footer__about {
+    margin: 2rem 0;
   }
 }
-@media (min-width: 1921px) {
-  .footer {
-    padding: 10vw 22vw;
-    gap: 0;
-  }
+.footer__contact-logo {
+  margin-bottom: 2rem;
 }
-.footer__about-title {
-  text-align: center;
-}
-.footer__about-description {
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-@media (max-width: 1200px) {
-  .footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    padding: 10vw;
-  }
-  .footer__about {
-    grid-column: span 6;
-    margin-top: 2rem;
-    text-align: center;
-  }
-}
-@media (max-width: 900px) {
-  .footer {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 10vw;
-  }
-}
-.footer__contact, .footer__services, .footer__links, .footer__about {
-  display: grid;
-}
-@media (max-width: 900px) {
-  .footer__contact, .footer__services, .footer__links, .footer__about {
-    width: 100%;
-    grid-column: auto;
-  }
-}
-@media (max-width: 1200px) {
-  .footer__contact, .footer__services, .footer__links, .footer__about {
-    gap: 17px;
+@media (max-width: 1441px) {
+  .footer__contact-logo {
+    margin: 0 auto;
   }
 }
 .footer__services-links {
   position: relative;
+  margin: 1.5rem 0;
 }
 .footer__services-links:hover {
   color: #ecc96e;
@@ -75,11 +41,11 @@
   position: absolute;
   top: 1.5rem;
   left: 0;
-  width: 100%;
+  width: 75%;
   height: 1px;
   background-color: #ecc96e;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1441px) {
   .footer__services-links::after {
     width: 100%;
     top: 1.8rem;
@@ -93,6 +59,11 @@
 }
 .footer__services-title {
   font-weight: bold;
+}
+@media (max-width: 1441px) {
+  .footer__services-title {
+    text-align: center;
+  }
 }
 .footer .phone svg,
 .footer .mail svg {
@@ -111,13 +82,7 @@
 .mail {
   display: flex;
   place-items: center;
-}
-@media (min-width: 1200px) {
-  .social__media,
-.phone,
-.mail {
-    margin: 10px 0;
-  }
+  margin: 1.5rem 0;
 }
 .social__media a,
 .phone a,
@@ -125,9 +90,14 @@
   width: 25px;
   margin-right: 1rem;
 }
+.social__media a:hover,
+.phone a:hover,
+.mail a:hover {
+  color: #ecc96e;
+}
 
 .faculty-logo {
-  margin: 1.2rem auto;
-  max-width: 60px;
-  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 80px;
 }/*# sourceMappingURL=footer.css.map */
