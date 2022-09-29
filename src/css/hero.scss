@@ -33,16 +33,22 @@
 
   &__heading {
     font-family: "PlayfairDisplay", san-serif;
-    font-size: clamp(1.8rem, 1rem + 2.5vw, 5rem);
+    font-size: clamp(2rem, 1.2rem + 2.2vw, 5rem);
     font-weight: normal;
-    margin-top: 25vh;
+    margin-top: 18vh;
     text-transform: uppercase;
   }
 
   &__paragraph {
-    font-size: clamp(1.1rem, 0.4rem + 1vw, 2rem);
+    max-width: 47vw;
+    font-size: clamp(1.1rem, 0.3rem + 1vw, 2rem);
     font-weight: lighter;
-    margin: 2vh 0;
+    line-height: 1.6;
+    margin: 4vh 0;
+
+    @media (max-width: $tablet) {
+      max-width: 90vw;
+    }
   }
 
   &__btn {
