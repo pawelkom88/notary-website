@@ -67,7 +67,7 @@
 
 .latin {
   position: absolute;
-  right: 15vw;
+  right: 12vw;
   bottom: 5vh;
   font-size: clamp(0.9rem, 0.4rem + 1vw, 2rem);
   font-weight: lighter;

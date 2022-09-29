@@ -70,13 +70,11 @@ function innit() {
   function removeActiveClasses() {
     modal.classList.remove("modal-active");
     overlay.classList.remove("modal-active");
-    body.classList.remove("overflow");
   }
 
   function addActiveClasses() {
     modal.classList.add("modal-active");
     overlay.classList.add("modal-active");
-    body.classList.add("overflow");
     closeBtn.focus({preventScroll: true});
   }
 

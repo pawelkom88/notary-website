@@ -2,76 +2,42 @@
 @import "../breakpoints";
 
 .footer {
-  display: grid;
-  grid-template-columns: 15vw 1fr 1fr 15vw;
-  gap: 0 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
   color: $white;
-  padding: 10vw 12vw;
+  padding: 10vw 16vw;
   background-color: $primary;
   letter-spacing: 1.2px;
 
-  @media (min-width: $laptop) and (max-width: $desktop) {
-    grid-template-columns: 19vw 1fr 1fr 19vw;
-    padding: 10vw;
-  }
-
-  @media (min-width: $desktop) {
-    gap: 0 4rem;
-  }
-
-  @media (min-width: $ultra) {
-    padding: 10vw 22vw;
-    gap: 0;
-  }
-
-  &__about {
-    &-title {
-      text-align: center;
-    }
-
-    &-description {
-      font-size: 0.8rem;
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  @media (max-width: $laptop) {
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    padding: 10vw;
-
-    &__about {
-      grid-column: span 6;
-      margin-top: 2rem;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: $tablet) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 10vw;
+  @media (max-width: $desktop) {
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   &__contact,
   &__services,
-  &__links,
   &__about {
-    display: grid;
+    flex-basis: 100%;
 
-    @media (max-width: $tablet) {
-      width: 100%;
-      grid-column: auto;
+    @media (max-width: $desktop) {
+      margin: 2rem 0;
     }
+  }
 
-    @media (max-width: $laptop) {
-      gap: 17px;
+  &__contact {
+    &-logo {
+      @media (max-width: $desktop) {
+        margin: 0 auto;
+      }
+      margin-bottom: 2rem;
     }
   }
 
   &__services {
     &-links {
       position: relative;
+      margin: 1.5rem 0;
 
       &:hover {
         color: $teriary;
@@ -82,11 +48,11 @@
         position: absolute;
         top: 1.5rem;
         left: 0;
-        width: 100%;
+        width: 75%;
         height: 1px;
         background-color: $teriary;
 
-        @media (max-width: $laptop) {
+        @media (max-width: $desktop) {
           width: 100%;
           top: 1.8rem;
         }
@@ -100,6 +66,10 @@
 
     &-title {
       font-weight: bold;
+
+      @media (max-width: $desktop) {
+        text-align: center;
+      }
     }
   }
 
@@ -119,19 +89,20 @@
 .mail {
   display: flex;
   place-items: center;
-
-  @media (min-width: $laptop) {
-    margin: 10px 0;
-  }
+  margin: 1.5rem 0;
 
   & a {
     width: 25px;
     margin-right: 1rem;
+
+    &:hover {
+      color: $teriary;
+    }
   }
 }
 
 .faculty-logo {
-  margin: 1.2rem auto;
-  max-width: 60px;
-  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 80px;
 }
