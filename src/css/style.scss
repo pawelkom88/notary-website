@@ -168,7 +168,15 @@ h3 {
   justify-content: center;
   font-size: clamp(0.625rem, 0.1563rem + 2.5vw, 0.9375rem);
   list-style-type: none;
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  & li a:hover {
+    text-decoration: underline;
+  }
 
   & li::after {
     margin-right: 10px;
