@@ -18,18 +18,20 @@
 
   & input,
   textarea {
+    background-color: $grey;
+    margin-bottom: 1rem;
+    border: none;
     padding: 0.8rem;
+
+    &:focus {
+      background-color: $white;
+      outline-color: $secondary;
+      outline-style: double;
+    }
 
     @media (max-width: $mobile) {
       padding: 0.5rem;
     }
-  }
-
-  & input,
-  textarea {
-    background-color: $grey;
-    margin-bottom: 1rem;
-    border: none;
   }
 
   & input::placeholder,
