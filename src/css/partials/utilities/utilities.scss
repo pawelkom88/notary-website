@@ -134,4 +134,8 @@
 
 .line-height {
   line-height: 1.6;
+
+  & a:hover {
+    text-decoration: underline;
+  }
 }
