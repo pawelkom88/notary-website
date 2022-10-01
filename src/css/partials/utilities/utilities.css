@@ -128,4 +128,10 @@
 }
 .line-height a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 575px) {
+  .list-indent {
+    margin-left: 3rem;
+  }
 }/*# sourceMappingURL=utilities.css.map */

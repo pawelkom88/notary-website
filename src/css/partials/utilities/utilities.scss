@@ -139,3 +139,9 @@
     text-decoration: underline;
   }
 }
+
+.list-indent {
+  @media (min-width: $mobile) {
+    margin-left: 3rem;
+  }
+}
