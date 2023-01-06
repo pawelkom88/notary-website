@@ -122,4 +122,20 @@ function innit() {
   }
 }
 
+function maternityModal() {
+  const maternityModal = document.querySelectorAll(".maternity-modal");
+  const closeBtn = document.querySelector(".close-maternity-modal");
+
+  setTimeout(() => {
+    maternityModal.forEach(modal => modal.classList.add("modal-active"));
+  }, 4000);
+
+  closeBtn.addEventListener("click", () => {
+    document
+      .querySelectorAll(".maternity-modal")
+      .forEach(modal => modal.classList.remove("modal-active"));
+  });
+}
+
 innit();
+maternityModal();
