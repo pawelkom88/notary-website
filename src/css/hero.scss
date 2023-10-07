@@ -56,11 +56,12 @@
     background: none;
     border: 2px solid $teriary;
     color: $teriary;
+    padding: 1.5rem 2rem;
     @include transition(all, 0.3s);
 
     @media (max-width: $mobile) {
       font-size: 0.7rem;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1.2rem;
     }
 
     &:hover {

@@ -8,7 +8,7 @@
     time.innerHTML = `Redirect in ${seconds}`;
 
     if (seconds == 0) {
-      document.location.href = "https://sikorskanotary.co.uk";
+      document.location.href = "https://www.sikorskanotary.co.uk";
       clearInterval(timer);
     }
   }, 1000);

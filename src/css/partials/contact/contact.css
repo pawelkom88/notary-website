@@ -3,6 +3,11 @@
   margin: 4rem auto;
 }
 
+.contact__office {
+  width: 100%;
+  height: auto;
+}
+
 .contact > .form {
   max-width: 50%;
   margin: 0 auto 4rem;

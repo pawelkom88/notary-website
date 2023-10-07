@@ -2,7 +2,8 @@
   font-family: "PlayfairDisplay";
   font-display: swap;
   src: url(/fonts/PlayfairDisplay.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F,
+    U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .hero {
   position: relative;
@@ -27,7 +28,7 @@
 }
 .hero__heading {
   font-family: "PlayfairDisplay", san-serif;
-  font-size: clamp(2rem, 1.2rem + 2.2vw, 5rem);
+  font-size: clamp(1.6rem, 1.1rem + 2vw, 4.5rem);
   font-weight: normal;
   margin-top: 18vh;
   text-transform: uppercase;
@@ -38,6 +39,7 @@
   font-weight: lighter;
   line-height: 1.6;
   margin: 4vh 0;
+  overflow-wrap: break-word;
 }
 @media (max-width: 900px) {
   .hero__paragraph {
@@ -49,16 +51,17 @@
   background: none;
   border: 2px solid #ecc96e;
   color: #ecc96e;
+  padding: 1.5rem 2rem;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 575px) {
   .hero__btn {
     font-size: 0.7rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.2rem;
   }
 }
 .hero__btn:hover {
   background-color: #ecc96e;
   color: #002b12;
   transition: all 0.3s ease-in-out;
-}/*# sourceMappingURL=hero.css.map */
+} /*# sourceMappingURL=hero.css.map */

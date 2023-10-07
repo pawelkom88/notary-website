@@ -29,7 +29,7 @@ function innit() {
   });
 
   // close modal after clickingclose button
-  closeBtn.addEventListener("click", () => {
+  closeBtn?.addEventListener("click", () => {
     removeActiveClasses();
   });
 
@@ -75,7 +75,7 @@ function innit() {
   function addActiveClasses() {
     modal.classList.add("modal-active");
     overlay.classList.add("modal-active");
-    closeBtn.focus({preventScroll: true});
+    closeBtn?.focus({preventScroll: true});
   }
 
   function closeModalByKey() {
@@ -83,7 +83,7 @@ function innit() {
       "focusin",
       () => {
         if (document.activeElement === closeBtn) {
-          closeBtn.addEventListener("keydown", e => {
+          closeBtn?.addEventListener("keydown", e => {
             if (e.key === "Enter") {
               removeActiveClasses();
             }
@@ -130,7 +130,7 @@ function maternityModal() {
     maternityModal.forEach(modal => modal.classList.add("modal-active"));
   }, 4000);
 
-  closeBtn.addEventListener("click", () => {
+  closeBtn?.addEventListener("click", () => {
     document
       .querySelectorAll(".maternity-modal")
       .forEach(modal => modal.classList.remove("modal-active"));

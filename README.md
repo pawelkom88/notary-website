@@ -1,12 +1,12 @@
 <p align="center">
-<img src="https://sikorskanotary.co.uk/social-media-card.png" alt="Super awesome img" width="450" height="250"/>
+<img src="https://www.sikorskanotary.co.uk/social-media-card.png" alt="Super awesome img" width="450" height="250"/>
 </p>
 
 ## About The Project
 Notary website created for my dear friend who just graduated from uni and start a new business. Hopefully the website will attract more customers ! 
 
 ## Demo
-Here is a [live demo](https://sikorskanotary.co.uk/)
+Here is a [live demo](https://www.sikorskanotary.co.uk/)
 
 ## How I worked on this project
 - I built this website based on Figma designs:

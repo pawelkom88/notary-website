@@ -36,7 +36,7 @@
   font-size: clamp(0.7rem, 0.1rem + 1vw, 0.9rem);
   letter-spacing: 1px;
   border: 2px solid $teriary;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   @include transition(all, 0.3s);
 
   @media (max-width: $tablet) {

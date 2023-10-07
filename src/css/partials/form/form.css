@@ -28,14 +28,11 @@
 }
 @media (max-width: 575px) {
   .form input,
-.form textarea {
+  .form textarea {
     padding: 0.5rem;
   }
 }
 .form input::-moz-placeholder, .form textarea::-moz-placeholder {
-  opacity: 0.4;
-}
-.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
   opacity: 0.4;
 }
 .form input::placeholder,
@@ -46,11 +43,8 @@
   .form input::-moz-placeholder, .form textarea::-moz-placeholder {
     font-size: 0.8rem;
   }
-  .form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
-    font-size: 0.8rem;
-  }
   .form input::placeholder,
-.form textarea::placeholder {
+  .form textarea::placeholder {
     font-size: 0.8rem;
   }
 }
