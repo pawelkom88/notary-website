@@ -8,14 +8,14 @@
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .nav-links {
     display: none;
   }
 }
 
 .nav-link {
-  font-size: clamp(0.7rem, 0.4rem + 0.7vw, 1.2rem);
+  font-size: clamp(0.7rem, 0.4rem + 0.6vw, 1.1rem);
   margin-right: 2vw;
 }
 .nav-link:hover {
@@ -34,7 +34,7 @@
   padding: 1rem;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .cta-btn {
     display: none;
   }
